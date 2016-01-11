@@ -14,8 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
-
-import org.apache.commons.lang.RandomStringUtils;
+import java.util.UUID;
 
 /**
  * This class tests getter/setter methods of a class using JUnit.
@@ -65,7 +64,7 @@ public class GetterAndSetterVerifier {
 		defaultInstances.put(Float.class, random.nextFloat());
 		defaultInstances.put(double.class, random.nextDouble());
 		defaultInstances.put(Double.class, random.nextDouble());
-		defaultInstances.put(String.class, RandomStringUtils.randomAlphabetic(5));
+		defaultInstances.put(String.class, UUID.randomUUID().toString());
 		defaultInstances.put(Date.class, new Date(random.nextLong()));
 		
 		this.object = object;

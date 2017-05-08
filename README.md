@@ -36,3 +36,4 @@ The project uses Mockito to mock objects. You can replace it by instances.
     defautInstances.put(Foo.class, new Foo());
     GetterAndSetterVerifier.forClass(Foo.class).addDefaultInstances(defaultInstances).verify();
 ```
+Lucas Borges

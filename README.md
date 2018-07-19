@@ -4,7 +4,7 @@
 
 ### Simple Class
 
-Usually you only need call the static method "forClass" with class that you desire to test. Then, you need call the method "verify()". This example work well if the class is a JavaBean implemetation.
+Usually you only need call the static method "forClass" with class that you desire to test. Then, you need call the method "verify()". This example works well if the class is a JavaBean implemetation.
 
 ```java
     GetterAndSetterVerifier.forClass(Foo.class).verify();
@@ -35,5 +35,4 @@ The project uses Mockito to mock objects. You can replace it by instances.
     Map<Class<?>, Object> defautInstances = new HashMap<Class<?>, Object>();
     defautInstances.put(Foo.class, new Foo());
     GetterAndSetterVerifier.forClass(Foo.class).addDefaultInstances(defaultInstances).verify();
-```
-Lucas Borges
+``

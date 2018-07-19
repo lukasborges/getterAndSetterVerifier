@@ -35,4 +35,4 @@ The project uses Mockito to mock objects. You can replace it by instances.
     Map<Class<?>, Object> defautInstances = new HashMap<Class<?>, Object>();
     defautInstances.put(Foo.class, new Foo());
     GetterAndSetterVerifier.forClass(Foo.class).addDefaultInstances(defaultInstances).verify();
-``
+```

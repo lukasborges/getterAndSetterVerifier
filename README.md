@@ -4,7 +4,7 @@
 
 ### Simple Class
 
-Usually you only need call the static method "forClass" with class that you desire to test. Then, you need call the method "verify()". This example works well if the class is a JavaBean implemetation.
+Usually, you only need to call the static method "forClass" with class that you desire to test. Then, you need to call the method "verify()". This example works well if the class is a JavaBean implemetation.
 
 ```java
     GetterAndSetterVerifier.forClass(Foo.class).verify();
